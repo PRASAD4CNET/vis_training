@@ -1,4 +1,9 @@
-echo "This is running from jenkinsfile in git "
-echo "$BUILD_ID"
-echo "${env.WORKSPACE}"
-
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} $WORKSPACE"
+            }
+        }
+    }
