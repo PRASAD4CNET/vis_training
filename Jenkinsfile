@@ -11,7 +11,7 @@ pipeline {
         choice(name: 'CHOICE', choices: ['Devops', 'Dev', 'Ops', 'QA'], description: 'Pick something')
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
-        string(name: 'Student', defaultValue: 'Prasad', description: 'Who should I say hello to?')
+        string(name: 'Student', defaultValue: 'Prasad', description: 'Entere your name')
         
     }
     stages {
