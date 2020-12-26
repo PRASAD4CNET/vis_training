@@ -11,6 +11,7 @@ pipeline {
         choice(name: 'CHOICE', choices: ['Devops', 'Dev', 'Ops', 'QA'], description: 'Pick something')
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+        string(name: 'Student', defaultValue: 'Prasad', description: 'Entere your name')
         
     }
     stages {
@@ -25,6 +26,7 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
 
                 echo "Password: ${params.PASSWORD}"
+                echo " Student Name : ${params.Student}"
             }
         }
     }
