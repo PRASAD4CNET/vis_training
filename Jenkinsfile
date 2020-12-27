@@ -10,7 +10,7 @@ pipeline {
 
         choice(name: 'CHOICE', choices: ['Devops', 'Dev', 'Ops', 'QA'], description: 'Pick something')
 
-        password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+        password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password to access')
         
     }
     stages {
